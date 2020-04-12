@@ -73,17 +73,17 @@ exports.sendTeamEmail = async (req, res) =>
 
 
 var transporter = nodemailer.createTransport({
-  host: "mail.lukegannonkinesiology.com",
+  host: "REDACTED",
   port: 465,
   secure: true,
   auth: {
-    user: 'sportassist@lukegannonkinesiology.com',
-    pass: 'sportassist1'
+    user: 'REDACTED',
+    pass: 'REDACTED'
   }
 });
 
 var mailOptions = {
-  from: 'sportassist@lukegannonkinesiology.com',
+  from: 'REDACTED',
   to:  emailString,
   subject: req.body.subject,
   text: req.body.emailContent
